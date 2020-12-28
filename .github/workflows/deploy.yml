@@ -1,0 +1,22 @@
+name: Firebase Hosting Delpoy
+
+on: 
+  push: 
+    branches: [ master ]
+  pull_requests:
+    branches: [ master ]
+
+jobs:
+  auto_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+    - run: npm ci
+    - name: FireBase Deploy
+      run: |
+        sudo npm install -g firebase-tools
+        firebase use default --token $({secrets.FIREBASE_TOKEN})
+        firebase deploy --token $({secrets.FIREBASE_TOKEN})
