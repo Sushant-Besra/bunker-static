@@ -175,6 +175,23 @@
   padding-left: 10px;
   padding-right: 20px;
 }
+@media screen and (max-width : 400px){
+    .amenities_container > div > span{
+        font-size: 18px;
+    }
+    .amenities_container > div > i{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width : 500px){
+    .location_details{
+        font-size: 14px;
+    }
+    .location_details > i {
+        font-size: 30px;
+    }
+}
 
 /* Abhishek */
 
