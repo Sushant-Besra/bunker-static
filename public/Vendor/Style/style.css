@@ -28,7 +28,7 @@
 .a_sign > button {
   margin-right: 10px;
 }
-.btn-warning{
+.btn-warning {
   background-color: yellow;
 }
 /* Carousel */
@@ -78,34 +78,34 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-.nav-link{
+.nav-link {
   background-color: grey;
 }
-#myTabContent{
+#myTabContent {
   height: 400px;
 }
-@media screen and (max-width : 1000px){
-  #myTabContent{
+@media screen and (max-width: 1000px) {
+  #myTabContent {
     height: 300px;
   }
 }
-@media screen and (max-width : 800px){
-  #myTabContent{
+@media screen and (max-width: 800px) {
+  #myTabContent {
     height: 200px;
   }
 }
-@media screen and (max-width : 500px){
-  #myTabContent{
+@media screen and (max-width: 500px) {
+  #myTabContent {
     height: 150px;
   }
 }
-#home{
+#home {
   height: 100%;
 }
-#profile{
+#profile {
   height: 100%;
 }
-#contact{
+#contact {
   height: 100%;
 }
 .contact_container {
@@ -203,21 +203,21 @@
   padding-left: 10px;
   padding-right: 20px;
 }
-@media screen and (max-width : 400px){
-  .amenities_container > div > span{
-      font-size: 18px;
+@media screen and (max-width: 400px) {
+  .amenities_container > div > span {
+    font-size: 18px;
   }
-  .amenities_container > div > i{
-      margin-right: 5px;
-      margin-left: 5px;
+  .amenities_container > div > i {
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
-@media screen and (max-width : 500px){
-  .location_details{
-      font-size: 14px;
+@media screen and (max-width: 500px) {
+  .location_details {
+    font-size: 14px;
   }
   .location_details > i {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
 
@@ -225,6 +225,8 @@
 
 a {
   color: black;
+  list-style: none;
+  text-decoration: none;
 }
 
 /* click-to-call section */
