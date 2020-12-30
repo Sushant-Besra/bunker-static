@@ -1,9 +1,10 @@
+/* Navbar */
 .a_navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 70px;
   background-color: grey;
   box-shadow: 0 10px 10px -10px #b9a6a6;
 }
@@ -24,14 +25,13 @@
   width: 100%;
   height: 100%;
 }
-.a_sign > a {
+.a_sign > button {
   margin-right: 10px;
-  background-color: yellow;
-  text-decoration: none;
-  padding: 10px 20px 10px 20px;
-  color: black;
-  font-size: 18px;
 }
+.btn-warning{
+  background-color: yellow;
+}
+/* Carousel */
 .carousel-caption {
   right: 0 !important;
   left: 0 !important;
@@ -69,11 +69,44 @@
     font-size: 14px;
   }
 }
+/* Tabs */
 .nav {
   justify-content: center;
 }
 .nav-item {
   font-size: 26px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.nav-link{
+  background-color: grey;
+}
+#myTabContent{
+  height: 400px;
+}
+@media screen and (max-width : 1000px){
+  #myTabContent{
+    height: 300px;
+  }
+}
+@media screen and (max-width : 800px){
+  #myTabContent{
+    height: 200px;
+  }
+}
+@media screen and (max-width : 500px){
+  #myTabContent{
+    height: 150px;
+  }
+}
+#home{
+  height: 100%;
+}
+#profile{
+  height: 100%;
+}
+#contact{
+  height: 100%;
 }
 .contact_container {
   display: flex;
@@ -81,6 +114,7 @@
   justify-content: space-around;
   margin-top: 20px;
   border: 3px solid grey;
+  height: 100%;
 }
 .location_details {
   display: flex;
@@ -91,7 +125,7 @@
   border-right: 3px solid grey;
 }
 .location_details > div {
-  width: 50%;
+  width: 80%;
   margin-left: 5%;
 }
 .location_details > i {
@@ -104,30 +138,21 @@
 }
 .location_iframe > iframe {
   width: 90%;
-  height: 500px;
+  height: 100%;
 }
 @media screen and (max-width: 1000px) {
   .location_details {
     font-size: 24px;
   }
-  .location_iframe > iframe {
-    height: 300px;
-  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .location_details {
     font-size: 18px;
-  }
-  .location_iframe > iframe {
-    height: 200px;
   }
 }
 @media screen and (max-width: 500px) {
   .location_details {
     font-size: 16px;
-  }
-  .location_iframe > iframe {
-    height: 200px;
   }
   .nav-item {
     font-size: 16px;
@@ -137,14 +162,16 @@
   }
 }
 .dorms_container {
+  margin-top: 20px;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
+  height: 100%;
 }
 .dorms_container > span {
   margin-top: 15px;
-  font-size: 22px;
+  font-size: 26px;
 }
 @media screen and (max-width: 500px) {
   .dorms_container > span {
@@ -155,10 +182,11 @@
   margin-top: 20px;
   display: grid;
   grid-template-columns: auto auto;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
   margin-left: 20px;
   margin-right: 20px;
+  height: 100%;
+  align-items: center;
+  grid-column-gap: 5%;
 }
 .amenities_container > div {
   border: 1px solid rgb(87, 80, 80);
@@ -174,6 +202,23 @@
   height: 100%;
   padding-left: 10px;
   padding-right: 20px;
+}
+@media screen and (max-width : 400px){
+  .amenities_container > div > span{
+      font-size: 18px;
+  }
+  .amenities_container > div > i{
+      margin-right: 5px;
+      margin-left: 5px;
+  }
+}
+@media screen and (max-width : 500px){
+  .location_details{
+      font-size: 14px;
+  }
+  .location_details > i {
+      font-size: 30px;
+  }
 }
 
 /* Abhishek */
