@@ -24,12 +24,30 @@
   max-height: 100%;
   width: 100%;
   height: 100%;
+  margin-right: 5px;
+  padding: 5px;
+}
+.a_sign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .a_sign > button {
   margin-right: 10px;
 }
 .btn-warning {
   background-color: yellow;
+}
+@media screen and (max-width : 400px){
+  .a_logo > img{
+    height: 80%;
+  }
+  .a_logo {
+    margin-left: 5px;
+  }
+    .a_sign > button {
+      margin-right: 10px;
+  }
 }
 /* Carousel */
 .carousel-caption {
@@ -41,9 +59,13 @@
   width: 50%;
   top: 20%;
   margin-left: 20px;
+  text-shadow: 1px 1px #000000;
 }
 .hero_mobile {
   display: none;
+}
+.carousel-item > img{
+  max-height: 10%;
 }
 @media screen and (max-width: 1100px) {
   .carousel-caption {
