@@ -353,3 +353,50 @@ button.description-text {
   text-align: center;
   color: #ffffff;
 }
+
+
+#stick{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  bottom: 0;
+  padding-bottom: -2rem;
+  position: fixed;
+  background-color: #222222;
+  height: 30vh;
+  color: white;
+  border-radius: 9px;
+  display: none;
+  margin-bottom: 1rem;
+  right: 1rem;
+  box-shadow: -5px 5px 5px 5px #3d3d3d34;
+}
+#install-button{
+  display: block;
+  border-radius: 5px;
+  border-color: yellow;
+  background-color: yellow;
+  margin-top: 1rem;
+  margin-right: -5rem;
+  float: right;
+  border-width: 0;
+  height: 2rem;
+}
+.Text-Prompt{
+  margin-top: 1rem;
+  font-size: large;
+  color: white;
+  width: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#close-pop{
+  display: block;
+  font-size: larger;
+  color: white;
+  border: none;
+  background: none;
+  margin-right: 7rem;
+
+}

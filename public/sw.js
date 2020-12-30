@@ -6,10 +6,15 @@ cacheFiles = [
   "/",
   "/index.html",
   "/manifest.json",
+  "/manifest.webmanifest",
   "/Vendor/Images/upi-code.png",
   "/Vendor/Style/style.css",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css",
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css",
+  "/Vendor/Images/favicon.png",
+  "/Vendor/Images/icons/manifest-icon-192.png",
+  "/Vendor/Images/icons/manifest-icon-512.png",
+  "/Vendor/Images/icons/apple-icon-180.png"
 ]
 console.log("In service worker");
 // this.addEventListener("install", (e) => {
