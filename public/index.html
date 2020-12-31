@@ -6,7 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="white" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="Vendor/Images/favicon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
@@ -20,6 +21,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <link
+      rel="apple-touch-icon"
+      href="Vendor/Images/icons/apple-icon-180.png"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
   </head>
 
   <body>
@@ -31,7 +38,9 @@
       </div>
       <div class="a_sign">
         <button type="button" class="btn btn-warning home_button">Login</button>
-        <button type="button" class="btn btn-warning home_button">Sign Up</button>
+        <button type="button" class="btn btn-warning home_button">
+          Sign Up
+        </button>
       </div>
     </div>
 
@@ -360,12 +369,17 @@
         >
       </div>
     </section>
-
+    <div id="stick">
+      <button id="close-pop">x</button
+      ><span class="Text-Prompt"><img src="Vendor/Images/favicon.png" alt="logo" width="20%" >&nbsp;&nbsp;Add Bunkbread to Home Screen</span
+      ><button id="install-button" type="button">Install</button>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
     <script src="./Vendor/js/serviceworker.js"></script>
+    <script src="./Vendor/js/popup-install.js"></script>
   </body>
 </html>
