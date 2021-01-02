@@ -122,11 +122,11 @@
     height: 200px;
   }
 }
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   #myTabContent {
     height: 150px;
   }
-}
+} */
 #home {
   height: 100%;
 }
@@ -144,21 +144,16 @@
   border: 3px solid grey;
   height: 100%;
 }
-.location_details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
+.contact{
   width: 50%;
-  border-right: 3px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
-.location_details > div {
-  width: 80%;
-  margin-left: 5%;
-}
-.location_details > i {
-  font-size: 50px;
-}
+/* .contact > div > button {
+  padding: 2%;
+} */
 .location_iframe {
   margin: 10px;
   width: 50%;
@@ -274,30 +269,65 @@ a:hover {
 .call-description {
   display: flex;
   flex-direction: column;
-  padding: 20px 0 0;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  width: 50%;
+  width: 50%;
 }
 
 .description {
   display: flex;
   justify-content: center;
-  margin: 0 0 10px;
+  margin-left: 10px;
+  width: 100%;
 }
-
-button.description-icon {
-  width: 150px;
-  height: 85px;
+.description > button {
   background: none;
-  border-right: none;
   outline: none;
 }
-
-button.description-text {
-  width: 500px;
+.description-icon{
+  padding: 2% 2%;
+  border: 2px solid grey;
+}
+.description-text {
   font-size: 20px;
-  background: none;
-  outline: none;
+  width: 80%;
+  padding: 2% 1%;
+  border: 2px solid grey;
+  border-left: none;
 }
-
+.description_br{
+  display: none;
+}
+.whatsapp{
+  padding: 2% 3.3%;
+}
+a:hover{
+  cursor: pointer !important;
+  color: grey !important;
+}
+.nav-link{
+  background-color: white;
+  border: 1px solid black !important;
+}
+.nav-link.active{
+  color: black !important;
+  background-color: yellow !important;
+}
+@media screen and (max-width : 550px){
+  .description-text {
+    width: 100%;
+  }
+  .description_br{
+    display: block;
+  }
+}
+@media screen and (max-width : 700px){
+  .description-text{
+    font-size: 16px;
+  }
+}
 /* upi-payment section */
 
 .upi-payment {
