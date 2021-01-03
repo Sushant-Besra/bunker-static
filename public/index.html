@@ -241,19 +241,27 @@
           <div class="call-description">
             <div class="description">
               <button class="description-icon">
-                <i class="fas fa-phone fa-2x"></i>
+                <a href="tel:6206653586"><i class="fas fa-phone fa-2x"></i></a>
               </button>
-              <button class="description-text">6206653586/<br class="description_br" />7872030149</button>
+              <button class="description-text">
+                6206653586/<br class="description_br" />7872030149
+              </button>
             </div>
             <div class="description">
               <button class="description-icon">
-                <i class="fas fa-envelope fa-2x"></i>
+                <a href="mailto:teambunkbread@gmail.com"
+                  ><i class="fas fa-envelope fa-2x"></i
+                ></a>
               </button>
-              <button class="description-text">teambunkbread<br class="description_br" />@gmail.com</button>
+              <button class="description-text">
+                teambunkbread<br class="description_br" />@gmail.com
+              </button>
             </div>
             <div class="description">
               <button class="description-icon whatsapp">
-                <i class="fab fa-whatsapp fa-2x"></i>
+                <a href="https://wa.me/916206653586?text=HI There!!">
+                  <i class="fab fa-whatsapp fa-2x"></i
+                ></a>
               </button>
               <button class="description-text">6206653586</button>
             </div>
@@ -303,9 +311,9 @@
     <!-- End of tabs -->
 
     <!-- Abhishek -->
-    <section id="click-to-call">
-      <!-- click-to-action when any button is clicked it redirects to the respective app -->
-      <div class="click-to-action">
+    <!-- <section id="click-to-call"> -->
+    <!-- click-to-action when any button is clicked it redirects to the respective app -->
+    <!-- <div class="click-to-action">
         <a href="tel:6206653586"><i class="fas fa-phone fa-3x"></i></a>
         <a href="mailto:teambunkbread@gmail.com"
           ><i class="fas fa-envelope fa-3x"></i
@@ -313,10 +321,10 @@
         <a href="whatsapp://send?phone=916206653586&text=HI THERE">
           <i class="fab fa-whatsapp fa-3x"></i
         ></a>
-      </div>
+      </div> -->
 
-      <!-- non-clickable description about contact -->
-      <!-- <div class="call-description container">
+    <!-- non-clickable description about contact -->
+    <!-- <div class="call-description container">
         <div class="description">
           <button class="description-icon">
             <i class="fas fa-phone fa-2x"></i>
@@ -335,22 +343,24 @@
           </button>
           <button class="description-text">6206653586</button>
         </div>
-      </div> -->
-    </section>
+      </div>
+    </section> -->
 
     <section id="upi-payment">
       <!-- upi-payment section through upi-code or click-to-call method -->
       <div class="upi-payment container">
         <h1>UPI Payments Accepted</h1>
         <div class="upi-code">
-          <img src="./Vendor/Images/upi-code.png" />
+          <a href="upi://pay?pa=sushantbesra91@oksbi">
+            <img src="./Vendor/Images/upi-code.png"
+          /></a>
         </div>
 
         <div class="upi-details">
           <a href="upi://pay?pa=sushantbesra91@oksbi"
             ><i class="fab fa-cc-amazon-pay fa-2x"></i
           ></a>
-          <a href="upi://pay?pa=sushantbesra91@oksbi">sushantbesra91@oksbi</a>
+          <a href="upi://pay?pa=sushantbesra91@oksbi">6206653586</a>
         </div>
       </div>
     </section>
@@ -358,33 +368,35 @@
     <section id="footer">
       <!-- footer section contain social media links and copyright info -->
       <div class="footer container">
+        <div class="copyright">
+          <!-- copyright information -->
+          <span> Copyright © 2020 All rights reserved Bunkbread</span>
+        </div>
+
         <!-- social media links -->
-        <div class="social">
-          <i class="fab fa-instagram fa-2x"></i>
-          <a href="https://www.instagram.com/bunkbread_/">Bunkbread</a>
-        </div>
+        <div class="socialIcon">
+          <div class="social">
+            <a href="https://www.instagram.com/bunkbread_/"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
 
-        <div class="social">
-          <i class="fab fa-facebook-square fa-2x"></i>
-          <a
-            href="https://www.facebook.com/bunkbread
-          "
-            >Bunkbread</a
-          >
+          <div class="social">
+            <a href="https://www.facebook.com/bunkbread">
+              <i class="fab fa-facebook-square fa-2x"></i
+            ></a>
+          </div>
         </div>
-      </div>
-
-      <div class="copyright">
-        <!-- copyright information -->
-        <span>
-          Copyright © 2020 All rights reserved <br />
-          Bunkbread</span
-        >
       </div>
     </section>
     <div id="stick">
       <button id="close-pop">x</button
-      ><span class="Text-Prompt"><img src="Vendor/Images/favicon.png" alt="logo" width="20%" >&nbsp;&nbsp;Add Bunkbread to Home Screen</span
+      ><span class="Text-Prompt"
+        ><img
+          src="Vendor/Images/favicon.png"
+          alt="logo"
+          width="20%"
+        />&nbsp;&nbsp;Add Bunkbread to Home Screen</span
       ><button id="install-button" type="button">Install</button>
     </div>
     <script
@@ -394,5 +406,6 @@
     ></script>
     <script src="./Vendor/js/serviceworker.js"></script>
     <script src="./Vendor/js/popup-install.js"></script>
+    <script src="./Vendor/js/app.js"></script>
   </body>
 </html>
