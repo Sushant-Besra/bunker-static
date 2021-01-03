@@ -384,13 +384,11 @@ a:hover {
 
 .upi-payment {
   text-align: center;
-  padding: 20px 0 30px;
 }
 
 .upi-details {
   display: flex;
   justify-content: center;
-  padding: 20px 0 0;
 }
 
 .upi-details a {
@@ -406,6 +404,10 @@ a:hover {
 
 .socialIcon {
   display: flex;
+}
+
+.social i {
+  font-size: 30px;
 }
 
 .footer {
@@ -439,6 +441,14 @@ a:hover {
 .copyright span {
   text-align: center;
   color: black;
+}
+
+hr {
+  margin: 5px;
+}
+
+.container {
+  max-width: 1500px;
 }
 
 #stick {
