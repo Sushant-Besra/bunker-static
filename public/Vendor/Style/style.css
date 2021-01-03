@@ -1,3 +1,7 @@
+.main{
+  width: 90%;
+  margin: auto;
+}
 /* Navbar */
 .a_navbar {
   display: flex;
@@ -14,7 +18,6 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  margin-left: 20px;
 }
 .a_logo > h1 {
   color: black;
@@ -36,8 +39,11 @@
 }
 .btn-warning {
   background-color: white;
+  border-color: yellow;
 }
-
+.btn-warning:hover{
+  background-color: #ffde17;
+}
 @media screen and (max-width: 400px) {
   .a_logo > img {
     height: 70%;
@@ -51,19 +57,25 @@
   }
   .home_button {
     padding: 0.375rem 0.55rem;
+    border-color: yellow;
   }
   .a_logo > h1 {
     margin-bottom: 0.25rem;
   }
 }
 /* Carousel */
+.carousel-inner{
+  -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+}
 .carousel-caption {
-  right: 0 !important;
-  left: 0 !important;
-  bottom: 2rem !important;
+  right: 0;
+  left: 0;
+  bottom: 2rem;
   text-align: left;
   font-size: 24px;
-  width: 50%;
+  width: 70%;
   top: 20%;
   margin-left: 20px;
   text-shadow: 1px 1px #000000;
@@ -74,19 +86,29 @@
 .carousel-item > img {
   max-height: 10%;
 }
+.r_carousel{
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (max-width: 1100px) {
   .carousel-caption {
-    top: 10%;
     font-size: 20px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .carousel-caption {
-    top: 10%;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  .r_carousel{
+    top: 40%;
+  }
+}
+@media screen and (max-width: 680px) {
   .hero_desktop {
     display: none;
   }
@@ -94,8 +116,20 @@
     display: block;
   }
   .carousel-caption {
-    top: 0;
     font-size: 14px;
+  }
+  .r_carousel{
+    top: 50%;
+  }
+}
+@media screen and (max-width : 500px){
+  .r_carousel{
+    top: 30%;
+  }
+}
+@media screen and (max-width : 375px){
+  .r_carousel{
+    top: 20%;
   }
 }
 /* Tabs */
@@ -103,24 +137,27 @@
   justify-content: center;
 }
 .nav-item {
-  font-size: 26px;
+  font-size: 1rem;
   margin-left: 5px;
   margin-right: 5px;
 }
 .nav-link {
   background-color: grey;
 }
+#myTab{
+  margin-top: 5px;
+}
 #myTabContent {
   height: 400px;
 }
 @media screen and (max-width: 1000px) {
   #myTabContent {
-    height: 300px;
+    height: 350px;
   }
 }
 @media screen and (max-width: 800px) {
   #myTabContent {
-    height: 200px;
+    height: 250px;
   }
 }
 /* @media screen and (max-width: 500px) {
@@ -173,6 +210,9 @@
   .location_details {
     font-size: 18px;
   }
+  .description-icon > a > i{
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .location_details {
@@ -202,30 +242,43 @@
     font-size: 16px;
   }
 }
+@media screen and (max-width: 800px) {
+  .dorms_container > span {
+    font-size: 18px;
+  }
+}
 .amenities_container {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: auto auto;
   margin-left: 20px;
   margin-right: 20px;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
   align-items: center;
-  grid-column-gap: 5%;
+  margin: auto;
+  margin-top: 20px;
 }
 .amenities_container > div {
-  border: 1px solid rgb(87, 80, 80);
+  text-align: center;
+  width: 300px;
 }
 .amenities_container > div > i {
   height: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
+}
+@media screen and (max-width : 750px){
+  .amenities_container > div{
+    width: 150px;
+  }
+}
+@media screen and (max-width : 450px){
+  .amenities_container{
+    padding-top: 20px;
+  }
 }
 .amenities_container > div > span {
-  border-left: 2px solid rgb(83, 81, 81);
   font-size: 24px;
   height: 100%;
-  padding-left: 10px;
-  padding-right: 20px;
 }
 @media screen and (max-width: 400px) {
   .amenities_container > div > span {
@@ -312,7 +365,7 @@ a:hover {
 }
 .nav-link.active {
   color: black !important;
-  background-color: yellow !important;
+  background-color: #ffde17 !important;
 }
 @media screen and (max-width: 550px) {
   .description-text {
