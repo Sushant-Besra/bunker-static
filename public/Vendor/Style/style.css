@@ -65,7 +65,7 @@
   }
 }
 /* Carousel */
-.carouselExampleCaptions{
+.carousel.slide{
   margin-top: 70px;
 }
 .carousel-inner{
