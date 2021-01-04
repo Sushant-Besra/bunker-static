@@ -1,5 +1,5 @@
 .main{
-  width: 90%;
+  width: 98%;
   margin: auto;
 }
 /* Navbar */
@@ -11,6 +11,10 @@
   height: 70px;
   background-color: white;
   box-shadow: 0 10px 10px -10px #b9a6a6;
+  position: fixed;
+  top: 0;
+  width: 98%;
+  z-index: 10;
 }
 .a_logo {
   display: flex;
@@ -39,7 +43,7 @@
 }
 .btn-warning {
   background-color: white;
-  border-color: yellow;
+  border-color: #ffde17;
 }
 .btn-warning:hover{
   background-color: #ffde17;
@@ -48,9 +52,6 @@
   .a_logo > img {
     height: 70%;
     margin-right: 0;
-  }
-  .a_logo {
-    margin-left: 3px;
   }
   .a_sign > button {
     margin-right: 5px;
@@ -64,6 +65,9 @@
   }
 }
 /* Carousel */
+.carouselExampleCaptions{
+  margin-top: 70px;
+}
 .carousel-inner{
   -webkit-box-shadow: 0 8px 6px -6px black;
        -moz-box-shadow: 0 8px 6px -6px black;
@@ -178,7 +182,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 10px;
   /* border: 3px solid grey; */
   height: 100%;
 }
@@ -226,7 +230,7 @@
   }
 }
 .dorms_container {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -235,7 +239,11 @@
 }
 .dorms_container > span {
   margin-top: 15px;
-  font-size: 26px;
+  font-size: 22px;
+  color: gray;
+}
+.dorms_container > span > div > i{
+  color: black;
 }
 @media screen and (max-width: 500px) {
   .dorms_container > span {
@@ -257,11 +265,11 @@
   flex-flow: row wrap;
   align-items: center;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .amenities_container > div {
   text-align: center;
-  width: 300px;
+  width: 200px;
 }
 .amenities_container > div > i {
   height: 100%;
@@ -273,12 +281,12 @@
 }
 @media screen and (max-width : 450px){
   .amenities_container{
-    padding-top: 20px;
   }
 }
 .amenities_container > div > span {
   font-size: 24px;
   height: 100%;
+  color: gray;
 }
 @media screen and (max-width: 400px) {
   .amenities_container > div > span {

@@ -18,6 +18,7 @@
             "purpose": "maskable any"
           }
     ],
-    "orientation":"potrait"
-    
+    "orientation":"potrait",
+    "theme_color": "yellow",
+  "background_color":"white"
 }
