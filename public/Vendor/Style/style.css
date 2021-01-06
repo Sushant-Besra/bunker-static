@@ -323,6 +323,7 @@ a {
   justify-content: space-around;
   background-color: #ffde17;
   padding: 15px 0;
+  box-shadow: 0 -8px 6px -8px black;
 }
 
 .call-description {
