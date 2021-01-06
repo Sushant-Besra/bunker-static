@@ -1,7 +1,7 @@
 {
     "name": "BunkerBread",
     "short_name":"BunkerBread",
-    "start_url":"/",
+    "start_url":"/index.html?homescreen=true",
     "description":"We are a backpacker hostel located in the heart of Darjeeling",
     "display":"fullscreen",
     "icons":[

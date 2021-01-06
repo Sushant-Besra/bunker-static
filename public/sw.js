@@ -15,7 +15,9 @@ cacheFiles = [
   "/Vendor/Images/icons/manifest-icon-192.png",
   "/Vendor/Images/icons/manifest-icon-512.png",
   "/Vendor/Images/icons/apple-icon-180.png",
-  "/Vendor/js/popup-install.js"
+  "/Vendor/js/popup-install.js",
+  "/Vendor/js/login_signup.js",
+  "/Vendor/js/app.js",
 ]
 console.log("In service worker");
 // this.addEventListener("install", (e) => {

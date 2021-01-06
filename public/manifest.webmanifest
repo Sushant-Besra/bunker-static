@@ -1,16 +1,9 @@
 {
   "name": "Bunkbread",
   "short_name": "Bunkbread",
-  "start_url": "/",
+  "start_url": "/index.html",
   "description": "We are a backpacker hostel located in the heart of Darjeeling",
   "display": "standalone",
-  "prefer_related_applications": true,
-  "related_applications": [
-    {
-      "platform": "play",
-      "id": "tobereleased.0.0.01"
-    }
-  ],
   "icons": [
     {
         "src": "Vendor/Images/icons/manifest-icon-192.png",

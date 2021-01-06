@@ -13,7 +13,7 @@
   box-shadow: 0 10px 10px -10px #b9a6a6;
   position: fixed;
   top: 0;
-  width: 98%;
+  width: 100vw;
   z-index: 10;
 }
 .a_logo {
@@ -281,6 +281,7 @@
 }
 @media screen and (max-width : 450px){
   .amenities_container{
+
   }
 }
 .amenities_container > div > span {
