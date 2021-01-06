@@ -284,9 +284,9 @@
   }
 }
 .amenities_container > div > span {
-  font-size: 24px;
+  font-size: 18px;
   height: 100%;
-  color: gray;
+  color: grey;
 }
 @media screen and (max-width: 400px) {
   .amenities_container > div > span {
