@@ -2,10 +2,7 @@
   "hosting": [ {
       
       "public": "public",
-      {
-      "target": "admin",
-      "public": "admin",
-      }
+      
       "ignore": [
           "firebase.json",
           "**/.*",
